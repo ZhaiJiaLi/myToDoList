@@ -41,12 +41,18 @@ window.onload=function () {
                 };
                 p.appendChild(input);
                 input.focus();
-
             }
             // let str=`<input type="checkbox" ><p>${item}</p>`;
             // box.innerHTML=str;
+            let del=document.createElement("div");
+            del.className="del";
+            del.onclick=function(){
+                arr1.splice(index,1);
+                update();
+            }
             box.appendChild(input);
             box.appendChild(p);
+            box.appendChild(del);
             con1.appendChild(box);
             input.onclick=function () {
                 arr1.splice(index,1);
@@ -65,8 +71,15 @@ window.onload=function () {
             p.innerHTML=item;
             // let str=`<input type="checkbox" ><p>${item}</p>`;
             // box.innerHTML=str;
+            let del=document.createElement("div");
+            del.className="del";
+            del.onclick=function(){
+                arr2.splice(index,1);
+                update();
+            }
             box.appendChild(input);
             box.appendChild(p);
+            box.appendChild(del);
             con2.appendChild(box);
             input.onclick=function () {
                 arr2.splice(index,1);

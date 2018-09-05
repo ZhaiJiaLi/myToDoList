@@ -96,14 +96,21 @@ section .doing .doing-top div{
     line-height: 32px;
     float: left;
 }
-.content .box:after{
+.content .box .del{
+    width: 26px;
+    height: 24px;
+    margin-top: 3px;
+    float: right;
+    margin-right: 5px;
+
+}
+.content .box .del:after{
     display: block;
     content: "-";
     width: 15px;
     height: 12px;
     border-radius: 18px;
     border: 6px double #FFF;
-    float: right;
     background: #CCC;
     line-height: 13px;
     text-align: center;
@@ -111,7 +118,8 @@ section .doing .doing-top div{
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
-    margin:4px ;
+    margin-bottom:2px;
+
 }
 .done .content{
     opacity: 0.6;
